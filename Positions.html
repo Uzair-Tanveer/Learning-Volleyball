@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Game Rules</title>
+
+<!-- changes the icon to a volleyball-->
+<link rel="icon" href="volleyball.ico" type="image/x-icon">
+
+<meta charset="utf-8">
+<style>
+    body { 
+        
+        background-color:  #7BAFD4 ;
+        font-family:'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif
+    
+    
+        }
+    
+    h1 { 
+    
+        background-color: grey;
+        color: white;
+        text-align: center;
+        
+        }
+    
+    h2{ 
+    
+        background-color: white;
+        text-align: center;
+    
+        }
+    
+    nav{ 
+    
+        text-align: center;
+        font-size: larger;
+    
+    }
+    
+    p{
+    
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    dt{ 
+        font-weight: bolder;
+        text-decoration-line: underline;
+    }
+    
+    #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: white;
+        border: solid 3px black;
+        text-align: center;
+        border-radius: 20px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 20px;
+    }
+    
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+    
+    @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;} 
+        to {bottom: 30px; opacity: 1;}
+    }
+    
+    @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+    
+    @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;} 
+        to {bottom: 0; opacity: 0;}
+    }
+    
+    @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+    
+    .button {
+        display: block;
+        margin: 0 auto;	
+        background-color: grey;
+        color: black;
+        border: 5px solid white;
+        height: 75px;
+        width: 250px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 17px;
+    
+    }
+    </style>
+
+<!-- End of internal Styling-->
+<!-- End of styling and script tag are JavaScript for copyright button, done by myself-->
+
+</head>
+
+<body>
+
+    <!-- Start of Script-->
+    <!-- End of styling and script tag are JavaScript for copyright button, done by myself-->
+
+    <script>
+
+function myFunction() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+    </script>
+  <!-- End of Script-->
+
+ <header>
+   <h1>Learning the Positions</h1>
+ </header>
+
+   <nav>
+ <a href="Home Page.html">Home</a> <a href="Game Rules.html">Game Rules</a> <a href="Positions.html">Positions</a>
+ </nav>
+ <main>
+
+<dl>
+    <dt> Setter
+        <dd> The setter is the main contributor to the offense of the volleyball team. 
+            One of the requirements of the setter is having a delicate touch to set the ball perfectly for one of the attacking players. 
+            Communication is extremely important for the setter because they need to get the rest of the players on the same page. 
+            Without the setter, there wouldn’t be hard spikes or technical ball movement.</dd>
+    </dt>
+
+    <dt> Outside Hitter
+       <dd>The outside hitter is also known as the left-side hitter and is the lead attacker in the offensive strategy. 
+           To be a successful outsider hitter, you must be able to jump high, be quick on your feet, and be ready to adapt to different situations. 
+           The volleyball won’t always be placed where the outsider hitter would like, so they need to be prepared for hits from a variety of places.</dd>
+   </dt>
+
+
+   <dt> Opposite Hitter
+       <dd>Also known as the right-side hitter, these players need to be a perfect balance of both offense and defense. 
+           They will also get many opportunities to hit the volleyball, so similar to the outside hitter, jumping ability is vital. 
+           The main difference that sets the opposite hitter apart is their defensive responsibility.
+           Being able to receive the serve from the opposing team is just one of the many requirements of this specialized position.</dd>
+   </dt>
+
+   <dt>Middle Blocker
+        <dd>The middle blocker, sometimes known as the middle hitter, is the tallest player on the volleyball team. 
+            Their main role for the team is being the first line of defense against the opposing team’s hits. 
+            The middle blocker needs to read the other team’s attackers to quickly raise his or her arms above the net in a blocking attempt. 
+            However, this is not a defense-only position. The middle blocker will have chances for quick points throughout the set.</dd>
+   </dt>
+
+   <dt> Libero 
+        <dd>The libero can become confusing for non-volleyball players. 
+            They can only play on the back row of the court, and because of this, are the ideal person to receive a hit from the opposite team.
+            There are set rules the libero needs to follow, such as not attacking the ball at the net, playing a set for an attacker from the front, and more. 
+            You can always tell a libero apart from the rest of the team because they wear a different colored jersey.  </dd>
+   </dt>
+
+</dl>
+
+
+<br> 
+
+<p> Now that you know the positions of volleyball, you can organize a game and play with others.</p>
+
+
+<br> 
+<br>
+
+<!-- Creates a clickable button that shows the copyright information and then disappears after a few seconds-->
+ <footer>
+
+        <button class = "button" onclick="myFunction()">Show Copyright</button>
+        <div id="snackbar" style = "color:black;">&copy; Uzair Tanveer</div>
+  
+</footer>
+
+</body>
+</html>

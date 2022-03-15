@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+
+<!-- changes the icon to a volleyball-->
+<link rel="icon" href="volleyball.ico" type="image/x-icon">
+<meta charset="utf-8">
+<style>
+body { 
+    
+    background-color:  #7BAFD4 ;
+    font-family:'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif
+
+
+    }
+
+h1 { 
+
+    background-color: grey;
+    color: white;
+    text-align: center;
+    
+    }
+
+h2{ 
+
+    background-color: white;
+    text-align: center;
+
+    }
+
+nav{ 
+
+    text-align: center;
+    font-size: larger;
+
+}
+
+p{
+
+    text-align: center;
+    font-weight: bold;
+}
+
+#left{
+width: 15%;
+height: 15%;
+
+}
+
+#middle{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 35%;
+height: 20%;
+
+}
+    
+#right{
+width: 15%;
+height: 15%;
+margin-left: auto;
+ display: block;
+
+}
+
+dt{ 
+    font-weight: bolder;
+    text-decoration-line: underline;
+    font-size: x-large;
+}
+
+#container{
+
+    color: white;
+
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: white;
+	border: solid 3px black;
+    text-align: center;
+    border-radius: 20px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 20px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.button {
+	display: block;
+	margin: 0 auto;	
+	background-color: grey;
+	color: black;
+	border: 5px solid white;
+	height: 75px;
+	width: 250px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 17px;
+
+}
+</style>
+
+<!-- End of internal Styling-->
+<!-- End of styling and script tag are JavaScript for copyright button, done by myself-->
+
+</head>
+
+<body>
+
+    <!-- Start of Script-->
+    <!-- End of styling and script tag are JavaScript for copyright button, done by myself-->
+
+    <script>
+
+function myFunction() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+    </script>
+  <!-- End of Script-->
+
+ <header>
+   <h1>Let's Learn Volleyball</h1>
+ </header>
+
+   <nav>
+ <a href="Home Page.html">Home</a> <a href="Game Rules.html">Game Rules</a> <a href="Positions.html">Positions</a>
+ </nav>
+ <main>
+
+
+   <h2> My Volleyball Experience</h2>
+
+  <p> My name is Uzair Tanveer and I've been playing volleyball since I was 6. It was one of the first sports I started playing,
+      and I was fortunate enough to continue playing. A week before the Men's National Team tryouts, i was playing in a game 
+      when I broke my leg pretty bad and was not able to tryout. After recovering, I continued playing and now play for fun 
+      to make sure I don't give the game up. Maybe in the future, I will go and tryout for the team and play professionally. 
+  </p>
+
+
+                                                <h2>Site Overview</h2>
+<dl>
+     <dt> Home Page
+         <dd> This page will just desribe my experience with volleyball and why I love it so much.</dd>
+         <br>
+         <img id = "left" src="kid volleyball.jpg" alt="A kid playing Volleyball">
+     </dt>
+
+<br>    
+<br>
+
+     <dt> Game Rules
+        <dd> This page will go into depth about the rules of volleyball and how the game is played.</dd>
+        <a id = "container" href="Game Rules.html">Click here to check out the Game Rules Page </a>
+        <br>
+        <img id="left" src="rules.png" alt= " Volleyball Rotation Rules">
+    </dt>
+
+<br> <br>
+
+    <dt>Positions
+        <dd> This Page will talk about the positions in volleyball so you can know which position would be best for you!</dd>
+        <a id = "container" href="Positions.html">Click here to check out the Positions in Volleyball. </a>
+        <br>
+        <img id= "left" src="clipboard.jpg" alt="A Coach's clipbaord">
+    </dt>
+</dl>
+
+ </main>
+
+<br>
+<br>
+
+<!-- Creates a clickable button that shows the copyright information and then disappears after a few seconds-->
+ <footer>
+
+        <button class = "button" onclick="myFunction()">Show Copyright</button>
+        <div id="snackbar" style = "color:black;">&copy; Uzair Tanveer</div>
+  
+</footer>
+
+</body>
+</html>
+
+
+
+
+
